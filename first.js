@@ -12,7 +12,7 @@ let chooseX = document.querySelector("#choose-x");
 
 let turn = true; 
 let count = 0;
-let playerSymbol = "O"; // default
+let playerSymbol = "O";
 
 const winpattern = [
   [0,1,2],
@@ -25,13 +25,11 @@ const winpattern = [
   [6,7,8],
 ];
 
-// Start Screen
 playBtn.addEventListener("click", () => {
   choosePlayer.classList.remove("hide");
   playBtn.style.display = "none";
 });
 
-// Choose player
 chooseO.addEventListener("click", () => {
   playerSymbol = "O";
   startGame();
@@ -46,7 +44,6 @@ function startGame() {
   gameSection.classList.remove("hide");
 }
 
-// Gameplay
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
     let currentSymbol = turn ? playerSymbol : (playerSymbol === "O" ? "X" : "O");
@@ -118,3 +115,4 @@ const resetgame = () => {
 
 newgame.addEventListener("click", resetgame);
 reset.addEventListener("click", resetgame);
+
