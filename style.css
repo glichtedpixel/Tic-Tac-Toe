@@ -11,7 +11,6 @@ body {
   color: white;
 }
 
-/* --- START SCREEN --- */
 .start-screen {
   height: 100vh;
   display: flex;
@@ -37,7 +36,6 @@ body {
   box-shadow: 0 0 15px #00ffff;
 }
 
-/* --- CHOOSE PLAYER --- */
 .choose-player {
   margin-top: 2rem;
 }
@@ -70,7 +68,6 @@ body {
   box-shadow: 0 0 15px #ff4d6d;
 }
 
-/* --- GAME AREA --- */
 .container {
   height: 70vh;
   display: flex;
@@ -100,7 +97,6 @@ body {
   transition: 0.3s;
 }
 
-/* --- COLORS --- */
 .box.o {
   color: #00b4d8;
   box-shadow: 0 0 15px #00b4d8;
@@ -111,7 +107,6 @@ body {
   box-shadow: 0 0 15px #ff4d6d;
 }
 
-/* --- WINNER GLOW EFFECT --- */
 .winner-o {
   animation: oGlow 0.6s infinite alternate;
 }
@@ -138,8 +133,6 @@ body {
   }
 }
 
-
-/* --- BUTTONS --- */
 #reset, #new {
   padding: 1rem;
   font-size: 1.25rem;
@@ -155,7 +148,6 @@ body {
   background-color: #333;
 }
 
-/* --- MESSAGE --- */
 .msg-container {
   height: 100vmin;
   display: flex;
@@ -170,7 +162,6 @@ body {
   display: none;
 }
 
-/* --- GLOWING TITLE --- */
 h1 {
   font-size: 10vmin;
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00b4d8;
@@ -185,3 +176,4 @@ h1 {
     text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00b4d8;
   }
 }
+
